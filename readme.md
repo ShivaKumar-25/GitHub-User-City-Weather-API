@@ -10,26 +10,26 @@ This project provides two HTTP GET endpoints:
 
 ## Setup
 
-git clone https://github.com/YourUsername/github_weather_api.git
-cd github_weather_api
-python -m venv venv
-venv\Scripts\activate   # Windows
-pip install -r requirements.txt
+git clone https://github.com/YourUsername/github_weather_api.git  
+cd github_weather_api   
+python -m venv venv   
+venv\Scripts\activate   # Windows   
+pip install -r requirements.txt   
 
-Create `.env` file:
+Create `.env` file:   
 
-OPENWEATHER_API_KEY=your_openweather_api_key_here
+OPENWEATHER_API_KEY=your_openweather_api_key_here   
 
 ## Run
-
-uvicorn app.main:app --reload --port 3400
+ 
+uvicorn app.main:app --reload --port 3400   
 
 ## Usage Examples
 
 - GitHub User:  
-GET http://localhost:3400/get_github_user?username=octocat
+GET http://localhost:3400/get_github_user?username=octocat   
 
 - Weather:  
-GET http://localhost:3400/get_weather/London
+GET http://localhost:3400/get_weather/London   
 
-Logs are stored in `logs/api.log`.
+Logs are stored in `logs/api.log`.   
